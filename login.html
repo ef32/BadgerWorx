@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> Log in</title>
+        <script type="module" src="./login.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="./no-script.css"/>
+            <div class="alert" role="alert">
+                <span>IMPORTANT! To log in successfully please enable Javascript. If you can not enable javascript. Please visit 
+                    <a href="./index.html">Home</a> for more information.
+                </span>
+            </div>
+        </noscript>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <div class="header-nav-container">
+            <header>
+                <div class="header-nav">
+                    <a id="service-name" href="./index.html">BadgerWorx</a>
+                    <nav aria-label="Top level navigation">
+                        <div id="navigation" role="list">
+                        <a role="listitem" href="#">About</a>
+                        <a role="listitem" href="#">Contact us</a>
+                      </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <main
+        tabindex="-1"
+        id="login-main"
+        >
+
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Login</h1>
+                <form id="login-form" method="post">
+                    <noscript>
+                        <p class="no-js-info">The Login function will not work properly. To login successfully , you must have javascript enabled. <a href="./index.html">Back to Home</a></p>
+                    </noscript>
+                    <label id="username" class="visually-hidden" for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Username" autocomplete="username">
+                    <label class="visually-hidden" for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Password" autocomplete="current-password">
+                    <div class="js-enabled">
+                        <div class="options">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit">Login</button>
+        
+                        <p>Don't have an account? <a href="#" id="register">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+#index-main {
+    padding: 10px 20px;
+}
+
+
+.header-nav-container {
+    height: 70px;
+    background-color: #5c7d647e;
+    color: #fff;
+}
+
+header{
+    height: 100%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 12px;
+}
+
+.header-nav #navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#navigation a{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#fff
+}
+
+a#login{
+    margin-left: auto;
+}
+
+.header-nav #service-name{
+    font-size: 38px;
+    text-decoration: none;
+    color: #fff
+}
+
+#login-main {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 450px;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+
+.visually-hidden { 
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+    clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+    clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+    white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+.login-box {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#invalid-user {
+    color: rgb(142, 24, 24);
+}
+
+h1 , h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #00000088;
+}
+
+section p {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #5e5b5b;
+}
+
+input::placeholder {
+    color: #00000045;
+}
+
+input:focus {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+.options input {
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.options a {
+    text-decoration: none;
+    margin-left: auto;
+}
+
+button {
+    background: #5c7d647e;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #27442e7e;
+    outline: 1px solid #fff;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#register {
+    text-decoration: none;
+    font-weight: bold;
+}
